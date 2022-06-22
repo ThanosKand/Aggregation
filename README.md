@@ -10,7 +10,7 @@ alpha	the stickiness factor, in the range 0 to 1.
 epsilon	turbulent dissipation rate e.g. 1E-4 units: m2 s-3
 Ptotal	rate of production of primary particles e.g. 1E5 units [µg C m-2 day-1]
 []	is a space holder for an input structure – not implemented here
-Tmax	the time span of simulations e.g. 3*365 units [days]
+Tmax	the time span of simulations e.g. 3\*365
 seasonal	0 for steady and 1 for a simple seasonal production cycle.
 
 All relevant output is passed through the structure simo. Most relevant are
@@ -25,9 +25,9 @@ For the sensitivity plots, sweeps across parameter space were set up using the b
 
 clear all
 
-sima17 = coagfun(1.7,0.5,1E-4,1E5,[],1*365,0);
-sima18 = coagfun(1.8,0.5,1E-4,1E5,[],1*365,0);
-sima19 = coagfun(1.9,0.5,1E-4,1E5,[],1*365,0);
+sima17 = coagfun(1.7,0.5,1E-4,1E5,[],1\*365,0);
+sima18 = coagfun(1.8,0.5,1E-4,1E5,[],1\*365,0);
+sima19 = coagfun(1.9,0.5,1E-4,1E5,[],1\*365,0);
 sima20 = coagfun(2.0,0.5,1E-4,1E5,[],1*365,0);
 sima21 = coagfun(2.1,0.5,1E-4,1E5,[],1*365,0); 
 sima22 = coagfun(2.2,0.5,1E-4,1E5,[],1*365,0);
