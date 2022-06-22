@@ -5,8 +5,8 @@ Model: The basic model is run by the call
 simo = coagfun(a,alpha,epsilon,Ptotal,[],Tmax,seasonal)
 
 where the input parameters are
-a	the self-similarity parameter e.g. 1.7 to 2.1
-alpha	the stickiness factor, in the range 0 to 1.
+a	the self-similarity parameter e.g. 1.7 to 2.1\\
+alpha	the stickiness factor, in the range 0 to 1.\\
 epsilon	turbulent dissipation rate e.g. 1E-4 units: m2 s-3
 Ptotal	rate of production of primary particles e.g. 1E5 units [µg C m-2 day-1]
 []	is a space holder for an input structure – not implemented here
