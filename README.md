@@ -5,21 +5,21 @@ Model: The basic model is run by the call
 simo = coagfun(a,alpha,epsilon,Ptotal,[],Tmax,seasonal)
 
 where the input parameters are
-a	the self-similarity parameter e.g. 1.7 to 2.1\\
-alpha	the stickiness factor, in the range 0 to 1.\\
-epsilon	turbulent dissipation rate e.g. 1E-4 units: m2 s-3
-Ptotal	rate of production of primary particles e.g. 1E5 units [µg C m-2 day-1]
-[]	is a space holder for an input structure – not implemented here
-Tmax	the time span of simulations e.g. 3\*365
-seasonal	0 for steady and 1 for a simple seasonal production cycle.
+- a:	the self-similarity parameter e.g. 1.7 to 2.1
+- alpha:	the stickiness factor, in the range 0 to 1.
+- epsilon:	turbulent dissipation rate e.g. 1E-4 units: m2 s-3
+- Ptotal:	rate of production of primary particles e.g. 1E5 units [µg C m-2 day-1]
+- []:	is a space holder for an input structure – not implemented here
+- Tmax:	the time span of simulations e.g. 3\*365
+- seasonal:	0 for steady and 1 for a simple seasonal production cycle.
 
 All relevant output is passed through the structure simo. Most relevant are
-simo.N	Aggregate distribution at Tmax:  Size and density resolved number [m-3] 
-simo.M	Aggregate distribution at Tmax:  Size and density resolved mass [µg C m-3]  
-simo.p	All run parameters
-simo.w	Sinking speed [m day-1]
-simo.d	Excess density [µg µm-3]
-simo.m	Mass [µg]
+- simo.N	Aggregate distribution at Tmax:  Size and density resolved number [m-3] 
+- simo.M	Aggregate distribution at Tmax:  Size and density resolved mass [µg C m-3]  
+- simo.p	All run parameters
+- simo.w	Sinking speed [m day-1]
+- simo.d	Excess density [µg µm-3]
+- simo.m	Mass [µg]
 
 For the sensitivity plots, sweeps across parameter space were set up using the batchrun script containing instruction sets such as
 
