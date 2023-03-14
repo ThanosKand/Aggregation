@@ -1,4 +1,4 @@
-function dMdt = intraxseason(t,M,m,bi,bj,Nr,Nd,b300,b301,b310,b311,f00,f01,f10,f11,alpha,beta,w,H,prod,remin,pfrag,dfrag)
+function dMdt = interaxseason(t,M,m,bi,bj,Nr,Nd,b300,b301,b310,b311,f00,f01,f10,f11,alpha,beta,w,H,prod,remin,pfrag,dfrag)
 %UNTITLED Summary of this function goes here
 %   Detailed explanation goes here
 M(M<1E-9) = 0;
